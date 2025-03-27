@@ -8,11 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
-    - name: Clean workspace
-      run: git clean -fdx
-
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
