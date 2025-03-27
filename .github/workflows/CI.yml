@@ -29,12 +29,6 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Install missing MUI module
-      run: npm install @mui/base
-
-    - name: Build project
-      run: npm run build
-
   docker:
     runs-on: ubuntu-latest
     needs: build
